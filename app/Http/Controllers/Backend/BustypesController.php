@@ -39,20 +39,9 @@ class BustypesController extends Controller
 
         $bustype = new Bustypes();
         $this->validate($request,[
-            'title'=>'required',
-            'image'=>'required',
-            'seat'=>'required|numeric'
+            'bustypes_title'=>'required',
         ]);
-        $data['title']=$request->title;
-        $data['seat']=$request->seat;
-        if($request->hasFile('image')) {
-            $destination = public_path("img/bustype");
-            $file = $request->image;
-            $extension = $file->getClientOriginalExtension();
-            $filename=str_random().".".$extension;
-            $file->move($destination,$filename);
-            $data['image'] = $filename;
-        }
+        $data['bustypes_title']=$request->bustypes_title;
         if($bustype->create($data)){
             return redirect()->route('bustypes')->with('success','The record has been successfully inserted.');
         }
@@ -66,16 +55,28 @@ class BustypesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request)
+    public function view()
     {
-        if(!$request->id){
-            return redirect()->back();
-        }
-        $bustypeId=$request->id;
-        $bustype = Bustypes::where('bustypes_id',$bustypeId)->first();
+        // if(!$request->id){
+        //     return redirect()->back();
+        // }
+        // $bustypeId=$request->id;
+        $bustype = Bustypes::orderBy('bustypes_id','DESC')->paginate(8);
 
         return view('backend.bustype.view_bustype', compact('bustype'));
     }
+
+    public function show(Request $request)
+    {
+         if(!$request->id){
+             return redirect()->back();
+         }
+         $bustypeId=$request->id;
+        $bustype = Bustypes::where('bustypes_id',$bustypeId)->first();
+
+        return view('backend.bustype.show_bustype', compact('bustype'));
+    }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -105,19 +106,7 @@ class BustypesController extends Controller
         $this->validate($request,[
 
         ]);
-        $data['title']=$request->title;
-        $data['seat']=$request->seat;
-        if($request->hasFile('image')) {
-            $destination = public_path("img/bustype");
-            $file = $request->image;
-            $extension = $file->getClientOriginalExtension();
-            $filename=str_random().".".$extension;
-            $file->move($destination,$filename);
-            $data['image'] = $filename;
-        }
-        else {
-            $data['image'] = $bustype->image;
-        }
+        $data['bustypes_title']=$request->bustypes_title;
         if(Bustypes::where('bustypes_id',$bustypeId)->update($data)){
             return redirect()->route('bustypes')->with('success','The record has been successfully updated');
         }
@@ -131,7 +120,7 @@ class BustypesController extends Controller
             return redirect()->back();
         }
         $bustypeId = $request->id;
-        if ($this->deleteWithImage($bustypeId) && Bustypes::where('bustypes_id',$bustypeId)->delete()) {
+        if ( Bustypes::where('bustypes_id',$bustypeId)->delete()) {
             return redirect()->route('bustypes')->with('success', 'The record was successfully deleted');
         }
         return redirect()->route('bustypes')->with('error','Sorry,the record couldn\'t be deleted');

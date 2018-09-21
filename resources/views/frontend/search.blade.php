@@ -1,7 +1,5 @@
-<?php
-?>
-<?php include("/../_include/search.php")?>
-
+@extends('layouts.frontend')
+@section('content')
 <section class="page-section">
     <h3 class="text-center">We have got 7 suitable results for you</h3>
     <div class="container shop">
@@ -193,3 +191,5 @@
 
         bindDatePicker();
     });</script>
+
+    @endsection

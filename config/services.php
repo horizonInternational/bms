@@ -35,4 +35,17 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'facebook' => [
+    'client_id' => '1932066946858202',         // Your Facebook Client ID
+    'client_secret' => 'ce6bae6211b570cb9a2220b7ad775bfc', // Your Facebook Client Secret
+    'redirect' => 'http://localhost/ecosanjal/login/facebook/callback',
+    ],
+
+
+    'google' => [ 
+                'client_id' => '99806559673-su9b4dv0cda1dthp5lmmb7o5rr9k0c1a.apps.googleusercontent.com',
+                'client_secret' => '8DARnoqOGw7K3-h5RIdxJA-G',
+                'redirect' => 'http://localhost/ecosanjal/login/google/callback', 
+        ],
+
 ];

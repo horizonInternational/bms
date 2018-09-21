@@ -75,8 +75,17 @@ class TestimonialsController extends Controller
         }
         $testimonialId=$request->id;
         $testimonial = Testimonials::where('testimonials_id',$testimonialId)->first();
+        return view('backend.testimonial.show_testimonial', compact('testimonial'));
+    }
+
+
+    public function view()
+    {
+
+        $testimonial = Testimonials::orderBy('testimonials_id','DESC')->paginate(10);
         return view('backend.testimonial.view_testimonial', compact('testimonial'));
     }
+
 
     /**
      * Show the form for editing the specified resource.

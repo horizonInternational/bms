@@ -1,6 +1,5 @@
-
-@extends('layouts.frontend')
-    <section class="page-section">
+@include('branches.header')
+<section class="page-section">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-10 work-section ">
@@ -252,3 +251,5 @@
         </div>
     </div>
 </div>
+
+@include('branches.footer')

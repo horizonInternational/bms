@@ -11,239 +11,299 @@
           href="{{url('public/frontend/assets/images/favicon.ico')}}">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Amaranth:400,700|Poppins:300,400,600,700" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Amaranth:400,700|Poppins:300,400,600,700" rel="stylesheet">
 
     <link href="{{ url('public/frontend/css/plugins.min.css') }}" rel="stylesheet">
 
     <link href="{{ url('public/frontend/css/font-awesome.min.css') }}" rel="stylesheet"/>
-    <link rel="stylesheet" href="{{ url('public/frontend/css/icons.css') }}">
-    <link rel="stylesheet" href="{{url('public/frontend/css/')}}">
-    <link rel="stylesheet" href="{{url('public/frontend/css/style.css')}}">
-    <link href="{{ url('public/frontend/css/responsive.css') }}" rel="stylesheet">
-
-    <link href="{{ url('public/frontend/css/color-1.css') }}" rel="stylesheet">
-    <link href="{{ url('public/frontend/css/bootstrap-datepicker.css') }}" rel="stylesheet">
-
-    <link rel="stylesheet" href="{{url('public/frontend/css/overrides.css')}}">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
-
-    <script src="{{url('public/frontend/js/jquery.min.js')}}"></script>
-
-    <script>
-        window.setTimeout(function () {
-            $(".alert").fadeTo(500, 0).slideUp(500, function () {
-                $(this).remove();
-            });
-        }, 2000);
-    </script>
-
-</head>
-<body>
-<div id="page">
-
-    <!-- Page Loader -->
-    <div id="pageloader">
-        <div class="loader-item fa fa-spin text-color"></div>
-    </div>
+    <link rel="stylesheet" type="text/css" href=" {{ url('public/frontend/css/jquery-ui.css') }}" > -->
 
 
-    <!-- Top Bar -->
-    <div id="top-bar" class="top-bar-section top-bar-bg-color">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <!-- Top Contact -->
-                    <div class="top-contact link-hover-black">
-                        <a href="#">
-                            <i class="fa fa-phone"></i>
-                            + 123 132 1234
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-envelope"></i>
-                            ecosanjal@info.com
-                        </a>
-                    </div>
-                    <!-- Top Social Icon -->
-                    <div class="top-social-icon icons-hover-black">
-                        <a href="#">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-dribbble"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-github"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-rss"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </div>
+    <!-- Bootstrap -->
+    <link href="{{url('public/bms/dist/css/bootstrap.css')}}" rel="stylesheet" media="screen">
+    <link href="{{url('public/bms/assets/css/custom.css')}}" rel="stylesheet" media="screen">
+
+    <!-- Carousel -->
+    <link href="{{url('public/bms/examples/carousel/carousel.css')}}" rel="stylesheet">
+
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic' rel='stylesheet'
+          type='text/css'>
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" type="text/css" href="{{url('public/bms/assets/css/font-awesome.css')}}" media="screen"/>
+    <!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome-ie7.css" media="screen"/><![endif]-->
+
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="{{url('public/bms/css/fullscreen.css')}}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="{{url('public/bms/rs-plugin/css/settings.css')}}" media="screen"/>
+
+    <!-- Picker UI-->
+    <link rel="stylesheet" href="{{url('public/bms/assets/css/jquery-ui.css')}}"/>
+
+    <!-- jQuery -->
+    <script src="{{url('public/bms/assets/js/jquery.v2.0.3.js')}}"></script>
+    <link href="{{ url('public/bms/updates/update1/css/style01.css')}}" rel="stylesheet" media="screen">
+
+
+    <!-- Bootstrap -->
+    <link href="{{url('public/bms/dist/css/bootstrap.css')}}" rel="stylesheet" media="screen">
+    <link href="{{url('public/bms/assets/css/custom.css')}}" rel="stylesheet" media="screen">
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+            type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="{{ url('public/bms/bus/css/style.css')}}">
+    <!--bus-->
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic' rel='stylesheet'
+          type='text/css'>
+
+
+    <link href="{{url('public/bms/examples/carousel/carousel.css')}}" rel="stylesheet">
+    <
+    <!-- Animo css-->
+    <link href="{{url('public/bms/plugins/animo/animate%2banimo.css')}}" rel="stylesheet" media="screen">
+
+    <!-- Picker -->
+    <link rel="stylesheet" href="{{url('public/bms/assets/css/jquery-ui.css')}}"/>
+
+    <!-- jQuery -->
+    <script src="{{url('public/bms/assets/js/jquery.v2.0.3.js')}}"></script>
+
+<body id="top">
+<!-- Top Bar -->
+<div id="top-bar" class="top-bar-section top-bar-bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Top Contact -->
+                <div class="top-contact link-hover-black">
+                    <a href="#">
+                        <i class="fa fa-phone"></i>
+                        + 977-9875648957
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-envelope"></i>
+                        bms@info.com
+                    </a>
+                </div>
+                <!-- Top Social Icon -->
+                <div class="top-social-icon icons-hover-black">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Top Bar -->
+</div>
+<!-- Top Bar -->
 
-    <!-- Sticky Navbar -->
-    <header id="sticker" class="sticky-navigation">
-        <!-- Sticky Menu -->
-        <div class="sticky-menu relative">
-            <!-- navbar -->
-            <div class="navbar navbar-default navbar-bg-light" role="navigation">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="navbar-header">
-                                <!-- Button For Responsive toggle -->
-                                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                        data-target=".navbar-collapse">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span style="color:#40d4e4" class="fa fa-user"
-                                          id="navCollapse">Login/Register</span></button>
+<!-- Top wrapper -->
+<div class="navbar-wrapper2 navbar-fixed-top">
+    <div class="container">
+        <div class="navbar mtnav">
+            <div class="container offset-3">
+                <!-- Navigation-->
+                <div class="navbar-header">
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                    <a href="{{route('home')}}" class="navbar-brand"><img src="{{ url('public/images/logo.png')}}"
+                                                                          alt="BMS Logo" class="logo"/></a>
+                    </p>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <a href="{{route('home')}}" class="navbar-brand responsive">
+                            <p style="    margin: 0 72px 1px;
+   border-buttom: 2px dotted #00a2e8;
+   padding: 0px 0px 9px;">Support : 01- 4422283 , +977 980343434</p>
+                        </a>
+                        @if(Auth::user() && Auth::user()->user_type=='traveller')
+                            <li>
+                                <button type="button" class="btn btn-info btn-lg"
+                                      >My Accout
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-info btn-lg"
+                                        ><a href="{{route('userLogout')}}">Logout</a>
+                                </button>
+                            </li>
+                        @else
+                        <li>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                    data-target="#myModal">Login
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                    data-target="#myModal2">Signup
+                            </button>
+                        </li>
+                            @endif
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Top wrapper -->
+<!-- END OF WRAP -->
+<center>
+    <!-- Login Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
 
-
-                                <a class="navbar-brand" href="{{route('home')}}">
-                                    <img class="site_logo" alt="Site Logo" width="190" height="86"
-                                         src="{{url('public/frontend/assets/images/logo.png')}}"/>
-                                </a>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <img src="{{url('public/bms/images/logo.png')}}"/>
+                    <h4 class="modal-title" style="padding-top: 20px;color: #0db53b;">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal" action="{{ route('loginUser')}}" method="post">
+                        {{csrf_field()}}
+                        <div class="form-group">
+                            <label for="email"  class="col-sm-2 control-label">
+                                Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" name="email" class="form-control" required="" id="email1" placeholder="Email"/>
                             </div>
-                            <!-- Navbar Collapse -->
-                            <div class="navbar-collapse collapse toLogin">
-                                <!-- nav -->
-                                <ul class="nav navbar-nav" style="margin-top:15px">
-                                    @if(Auth::user()&& Auth::user()->user_type=='traveller')
-                                    <a class="btn btn-deault"
-                                    href="{{route('profile')}}" style="background: #40d4e4;">
-                                    My Account
-                                    </a>&nbsp;<a class="btn btn-deault"
-                                    href="{{route('userLogout')}}" style="background: #40d4e4;">
-                                    Logout
-                                    </a>
-                                    @else
-                                    <a href="#">Don't you have an account?</a>&emsp;
-                                    <button class="btn btn-deault " data-toggle="collapse" data-target="" id="register">
-                                        Register
-                                    </button>
-                                    <button class="btn btn-deault " data-toggle="collapse" data-target="" id="login">
-                                        Login
-                                    </button>
-                                @endif
-
-                                    <!-- Shortcode Menu Ends -->
-                                    <!-- Header Search -->
-
-                                </ul>
-                                <!-- Right nav -->
-                                <!-- Header Contact Content -->
-                                <div class="bg-white hide-show-content no-display header-contact-content">
-                                    <p class="vertically-absolute-middle">Call Us <strong>+0 (123) 456 78 90</strong>
-                                    </p>
-                                    <button class="close">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                                </div>
-
-                                <!-- Header Search Content -->
-                                <div class="bg-white hide-show-content no-display header-search-content">
-                                    <form role="search" class="navbar-form vertically-absolute-middle">
-                                        <div class="form-group">
-                                            <input type="text" placeholder="Enter your text &amp; Search Here"
-                                                   class="form-control" id="s" name="s" value=""/>
-                                        </div>
-                                    </form>
-
-                                </div>
-                                <!-- Header Search Content -->
-
-                            </div>
-                            <!-- /.navbar-collapse -->
                         </div>
-                        <!-- /.col-md-12 -->
-                    </div>
-                    <!-- /.row -->
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" name="password" required="" minlength="8"
+                                       id="exampleInputPassword1" placeholder="Password"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">
+                            </div>
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary btn-sm">
+                                    Submit
+                                </button>
+                                <a href="javascript:;">Forgot your password?</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <!-- /.container -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <!-- navbar -->
+
         </div>
-        <!-- Sticky Menu -->
-    </header>
-    <!-- Sticky Navbar -->
-
-    <!--    login and register form-->
-    <div class="container row collapse loginx">
-        <span id="close"><i class="fa fa-times pull-right"></i></span>
-        <div class="content col-sm-12 col-md-6 col-md-offset-2">
-            <h3 class="title">Don&#39;t have an Account? </h3>
-            <form action="{{route('registerUser')}}" class="contact-form"  method="post">
-                {{@csrf_field()}}
-                <div id="success"></div>
-                <div class="row" role="form">
-                    <div class="col-md-10" id="registerUser">
-                        <small class="text text-danger">{{$errors->first('email')}}</small>
-                        <input type="text" class="form-control" name="email" id="userRegisterEmail"
-                               placeholder="Email *"/>
-                    </div>
-                </div>
-                <div class="row" role="form">
-                    <div class="col-md-10">
-                        <small class="text text-danger">{{$errors->first('password')}}</small>
-                        <input type="password" class="form-control" name="password" id="exampleInputEmail2"
-                               placeholder="Password *"/>
-                    </div>
-                </div>
-                <div class="row" role="form">
-                    <div class="col-md-10">
-                        <input type="password" class="form-control" name="password_confirmation"
-                               placeholder="Confirm Password *"/>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <button id="submit" class="btn btn-default">Register Now</button>
-            </form>
-        </div>
-        <!-- .content -->
-        <div class="col-sm-12 col-md-4" style="margin-top: -17px;">
-            <h3 class="title">Login Now</h3>
+    </div>
 
 
-            <div id="success">  </div>
-                <form action="{{route('loginUser')}}" id="loginUser" class="contact-form " method="post">
-                    {{@csrf_field()}}
-                    <input class="form-control" type="text" name="email" id="userLoginEmail" placeholder="Email *"/>
-                    <input class="form-control" type="password" name="password" placeholder="Password *"/>
-                    <div class="clearfix">
-                        <button id="submit" class="btn btn-default">Submit</button>
-                        <span class="pull-right">
-                            <a href="#" class="text-success forget">Forgot Password?</a>
-                        </span>
+    <!-- Login Modal End-->
+</center>
+<!--SignUp Modal-->
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <img src="images/logo.png"/>
+                <h4 class="modal-title" style="padding-top: 10px;color: #0db53b;">Signup</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" class="form-horizontal" action="{{route('registerUser')}}" method="post">
+                    {{csrf_field()}}
+                    <div class="form-group">
+                        <label for="rad" class="col-sm-3 control-label">
+                            User</label>
+                        <div class="col-sm-3">
+                            <input type="radio" name="rad" class="form-control" required="" id="rad"/>
+                        </div>
+                        <label for="rad2" class="col-sm-3 control-label">
+                            Vendor</label>
+                        <div class="col-sm-3">
+                            <input type="radio" name="rad" class="form-control" required="" id="rad"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fname" class="col-sm-3 control-label">
+                            Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="name" class="form-control" required id="fname" placeholder=" Name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"  class="col-sm-3 control-label">
+                            Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" name="email" class="form-control" required="" id="email1" placeholder="Email"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="col-sm-3 control-label">
+                            Password</label>
+                        <div class="col-sm-9">
+                            <input type="Password" name="password" class="form-control" minlength="8" required=""
+                                   id="exampleInputPassword1" placeholder="Password"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="rpass" class="col-sm-3 control-label">
+                            Re-Password</label>
+                        <div class="col-sm-9">
+                            <input type="Password" name="retype_password" class="form-control" minlength="8" required="" id="rpass"
+                                   placeholder="Re-Password"/>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-right: -796px;">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                                Register
+                            </button>
+                            <a href="index.html#myModal">Already have account?</a>
+                        </div>
                     </div>
                 </form>
-            <div class="orSignUp" style="margin-top: 20px;">
-                <a href="#" class="btn btn-md " style="color:#fff ;background: #3b5999;">
-                    Sign in with &nbsp;<i class="fa fa-facebook "></i>
-                </a>&nbsp;
-                <a href="#" class="btn btn-md " style="color:#fff ;background: #dd4b39;">
-                    Sign in with &nbsp;<i class="fa fa-google"></i>
-                </a>
-
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
-        <!--    login and register form-->
-    </div>
 
+    </div>
+</div>

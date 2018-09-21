@@ -48,6 +48,9 @@ header .nav .open > a.highlighted,
 	color: #dd4d2e;
 }
 
+.navbar-brand>img {
+    width: 125px;
+}
 
 
 
@@ -109,8 +112,9 @@ div.count-number:before,
 .image-bg .overlay-color,
 .overlay-color
 {
-	background-color: #40d4e4;
+	background-color: #5fa7da;
 }
+
 
 
 
